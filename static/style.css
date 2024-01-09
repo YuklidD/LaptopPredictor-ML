@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Custom Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    margin-left: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+.checkbox-group input[type="checkbox"]:checked:after {
+    content: '✔';
+    color: white;
+    font-size: 20px;
+}
+
+/* Optional: add a hover effect for the checkboxes */
+.checkbox-group input[type="checkbox"]:not(:checked):hover {
+    border-color: #007bff;
+}
+
+
+
+.form-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+input[type="number"],
+select,
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.cost {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 89, 255);
+}
+
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
